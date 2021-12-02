@@ -1,0 +1,63 @@
+/* using border-box model -- see https://frontendmasters.github.io/bootcamp/layout#box-model-types for explanation */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+/* turn off margin/padding, set font and size for the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+/* turn off bullets, push the box down the page, set a border plus width and height for demonstration purposes. */
+.HomePage {
+  padding: 0;
+  margin: auto auto;
+  list-style-type: none;
+  /* border: 10px dotted #9b2226; */
+  width: 1270px;
+  height: 200px;
+  Display: flex;
+  flex-flow: row nowrap;
+  justify-content:center;
+  align-items:center;
+  align-content: space-evenly;
+  /* background-color: #ee9800; */
+
+}
+/* set a border and background color to see each LI. Min-width and min-height are not necessarily a good idea in flexbox, but they are needed for the demo to better see the properties work. */
+h1 {
+  /* border: 2px solid #001219; */
+  color: #fff;
+  Display: flex;
+  flex-flow: row nowrap;
+  justify-content:center;
+  align-items:center;
+  align-content: space-evenly;
+  
+  
+}
+
+
+.HomePage a:link,
+.HomePage a:visited{
+  color: #fff;
+  /* padding: 6px 0px; */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.HomePage a:hover,
+.HomePage a:active{
+  border-bottom: 2px solid #e67e22;
+
+ }
+
+

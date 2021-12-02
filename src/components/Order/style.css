@@ -1,0 +1,27 @@
+.orders .row {
+   
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+  /* border: 10px dotted #9b2226; */
+  /* max-height: 100px;
+  max-width: 500px; */
+  Display: flex;
+  flex-flow: row wrap;
+  justify-content:flex-start;
+  align-items:flex-start;
+  align-content: space-evenly;
+  min-height : 100vh;
+
+  /* enforces a gap between boxes. You still have to do the math. See https://css-tricks.com/gaps-gasp/ */
+  gap: 0%; 
+}
+
+.orders figure {
+  /* border: 2px solid #001219; */
+  background-color: #ffffff;
+  /* min-width: 100px; */
+  flex-basis: 10%;
+  /* height: 300px;  */
+  
+}

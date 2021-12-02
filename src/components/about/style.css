@@ -1,0 +1,12 @@
+.about  {
+    /* border: 2px solid #001219;  */
+    color: #fff;
+    /* min-width: 100px;
+    height: 200px; */
+    Display: flex;
+  flex-flow: row nowrap;
+  justify-content:center;
+  align-items:center;
+  align-content: space-evenly;
+    
+  } 
