@@ -1,18 +1,4 @@
 /* using border-box model -- see https://frontendmasters.github.io/bootcamp/layout#box-model-types for explanation */
-html {
-    box-sizing: border-box;
-}
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-/* turn off margin/padding, set font and size for the page */
-body {
-  font-family: Arial, sans-serif;
-  background-color: lightblue;
-  margin: 0;
-  padding: 0;
-  font-size: 1.5rem;
-}
 /* turn off bullets, push the box down the page, set a border plus width and height for demonstration purposes. */
 .HomePage {
   padding: 0;
@@ -30,7 +16,7 @@ body {
 
 }
 /* set a border and background color to see each LI. Min-width and min-height are not necessarily a good idea in flexbox, but they are needed for the demo to better see the properties work. */
-h1 {
+.HomePage h1 {
   /* border: 2px solid #001219; */
   color: #fff;
   Display: flex;
@@ -38,6 +24,8 @@ h1 {
   justify-content:center;
   align-items:center;
   align-content: space-evenly;
+  font-size: 3.5rem;
+
   
   
 }

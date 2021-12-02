@@ -14,6 +14,8 @@ const Product = () => {
   useEffect(() => {
     getProducts();
   }, []);
+
+  
   return (
     <>
       <h1>Products Lists</h1>
@@ -24,7 +26,7 @@ const Product = () => {
             const { _id, price, quantity, brand, name ,product_img} = item;
             return (
               <figure key={_id}>
-                <img src={product_img} alt="laptop logo" class="logo"></img>
+                <img src={product_img} alt="img" ></img>
                 <figcaption>
                   <h4>Brand : {brand}</h4>
                   <h5>Item : {name}</h5>

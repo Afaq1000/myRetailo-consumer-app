@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from "react";
 import OrdersService from "../../services/OrdresService";
-import "./style.css";
+import "./style-order.css";
 import { Button ,Box} from "@material-ui/core";
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
 
 const Order = () => {
   const [orders, setOrders] = useState([]);
@@ -56,7 +63,7 @@ const Order = () => {
 
         <div className="orders">
           <div className="row">
-            <ul>
+         
               {orders.map((item) => {
                 const {
                   _id,
@@ -68,15 +75,15 @@ const Order = () => {
                 return (
                   <figure key={_id}>
                     <div>
-                      <h4>{delivery_date}</h4>
-                      <h5>{customer_id}</h5>
-                      <p>{order_type}</p>
-                      <p>{placed_at}</p>
+                      <h5>Delivery Date : {delivery_date}</h5>
+                      <h5>Customer Id : {customer_id}</h5>
+                      <h5>Order Type : {order_type}</h5>
+                      <h5>Placed At : {placed_at}</h5>
                     </div>
                   </figure>
                 );
               })}
-            </ul>
+           
           </div>
         </div>
       </>
@@ -85,3 +92,39 @@ const Order = () => {
 };
 
 export default Order;
+
+
+
+// const Order = () => {
+//   return (
+//     <TableContainer component={Paper}>
+//       <Table sx={{ minWidth: 650 }} aria-label="simple table">
+//         <TableHead>
+//           <TableRow>
+//             <TableCell>Delivery Date</TableCell>
+//             <TableCell align="right">Customer Id</TableCell>
+//             <TableCell align="right">Order Type</TableCell>
+//             <TableCell align="right">Placed At</TableCell>
+//           </TableRow>
+//         </TableHead>
+//         <TableBody>
+//           {rows.map((row) => (
+//             <TableRow
+//               key={row.DeliveryDate}
+//               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+//             >
+//               <TableCell component="th" scope="row">
+//                 {row.name}
+//               </TableCell>
+//               <TableCell align="right">{row.calories}</TableCell>
+//               <TableCell align="right">{row.fat}</TableCell>
+//               <TableCell align="right">{row.carbs}</TableCell>
+//             </TableRow>
+//           ))}
+//         </TableBody>
+//       </Table>
+//     </TableContainer>
+//   );
+// }
+
+// export default Order;
