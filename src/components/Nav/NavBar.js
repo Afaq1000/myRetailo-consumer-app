@@ -7,8 +7,8 @@ const NavBar = () => {
   return (
     <nav className="navigation">
       <ul className="container" >
-               <h1>Welcome to Retailo</h1>
-               <h5>Consumer App</h5>
+               <h1>Welcome to MyRetailo</h1>
+               <h5>Client Side</h5>
         <li >
           <Link to='/'>Home</Link>
         </li>
