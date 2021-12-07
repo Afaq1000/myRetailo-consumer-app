@@ -1,15 +1,4 @@
-import axios from "axios";
-
-const BASE_URL = "http://localhost:3000";
-
-const instance = axios.create({
-    baseURL: BASE_URL,
-    timeout: 1000,
-    headers:{
-      "x-auth-token": localStorage.getItem('x-auth-token')
-    }
-  });
-
+import {instance} from './index';
 async function OrdersService() {
     try {
       const response = await instance.get('/orderRoutes/orders');
