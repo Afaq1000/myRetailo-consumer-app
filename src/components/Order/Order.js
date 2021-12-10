@@ -30,6 +30,7 @@ const Order = () => {
     if(localStorage.getItem("x-auth-token")!=null){
 
      setFlag(true);
+     getOrders();
     }
     else{
       setFlag(false);
