@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ProductsService from "../../services/ProductsService";
+import { NavBar } from "../NavBar";
 import "./style.css";
 
 const Product = () => {
@@ -18,6 +19,7 @@ const Product = () => {
   
   return (
     <>
+        <NavBar/>
       <h1>Products Lists</h1>
 
       <div className="products">

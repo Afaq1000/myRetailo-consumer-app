@@ -115,6 +115,7 @@ import {
   Button
 } from "@material-ui/core";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import { NavBar } from '../NavBar';
 
 
 export const Register = () => {
@@ -149,6 +150,8 @@ export const Register = () => {
   const btnstyle = { margin: "8px 0" };
 
   return (
+    <>
+    <NavBar/>
     <Grid >
       <Paper elevation={14} style={paperStyle}>
         <Grid  align="center">
@@ -204,5 +207,7 @@ export const Register = () => {
 
       </Paper>
     </Grid>
+    </>
+
   );
 };

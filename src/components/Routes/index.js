@@ -2,19 +2,23 @@ import React from 'react';
 // react router
 import { BrowserRouter , Route, Routes } from 'react-router-dom';
 // pages
-import Home from '../Home/HomePage';
+// import Home from '../Home/HomePage';
 import Error from './Error';
-import Navbar from '../Nav/NavBar';
-import About from '../about/About'
+// import Navbar from '../Nav/NavBar';
+// import About from '../about/About'
 import Product from '../Product/Product';
 import Order from '../Order/Order';
 import {Login, Register} from '../login';
-
+import { NavBar } from '../NavBar';
+import { Home } from '../../pages/Home';
+import { Slider } from '../Slider';
 const ReactRouterSetup = () => {
   return (
    
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
+    
+      
       <Routes>
  
           <Route exact path='/'
@@ -35,14 +39,14 @@ const ReactRouterSetup = () => {
            <Route  path='/order'
            element={ <Order/>}
           />
-
+{/* {
           <Route  path='/about'
            element={ <About />}
-          />
-          
-          <Route path='*'
+          /> }
+           */}
+          { <Route path='*'
           element={ <Error />}
-          />
+          /> }
       </Routes>
     </BrowserRouter>
       

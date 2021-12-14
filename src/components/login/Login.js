@@ -78,6 +78,7 @@ import LogInService from "../../services/LogInService";
 
 import { Grid,Paper, Avatar, TextField, Button, Typography,Link } from '@material-ui/core'
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import { NavBar } from "../NavBar";
 
 
 export const Login=()=>{
@@ -104,8 +105,8 @@ export const Login=()=>{
     const avatarStyle={backgroundColor:'#1bbd7e'}
     const btnstyle={margin:'8px 0'}
     return(
-
-
+      <>
+      <NavBar/>
       
         <Grid>
             <Paper elevation={14} style={paperStyle}>
@@ -129,6 +130,7 @@ export const Login=()=>{
                 </Typography>
             </Paper>
         </Grid>
+        </>
     )
 }
 
