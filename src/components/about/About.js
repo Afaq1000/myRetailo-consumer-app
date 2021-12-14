@@ -1,17 +1,13 @@
-import React from 'react';
-import './style.css'
+import React from "react";
+import "./style.css";
 
 const About = () => {
-  
-    return (
-      <>
-        <div className="about" >
-          <h2>About</h2>
-        </div>
-      </>
-    );
-  
-
-  
-}
+  return (
+    <>
+      <div className="about">
+        <h2>About</h2>
+      </div>
+    </>
+  );
+};
 export default About;
