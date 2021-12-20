@@ -7,6 +7,7 @@ import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 const Container = styled.div`
   // padding:0;
   height: 80px;
+  
   // background-color: #000;
   // border: 2.5px solid lightgray;
 `;
@@ -52,6 +53,7 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+ 
 `;
 const MenuItem = styled.div`
   font-size: 14px;

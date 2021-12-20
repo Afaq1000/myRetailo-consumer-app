@@ -79,6 +79,8 @@ import LogInService from "../../services/LogInService";
 import { Grid,Paper, Avatar, TextField, Button, Typography,Link } from '@material-ui/core'
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import { NavBar } from "../NavBar";
+import NewsLetter from "../NewsLetter";
+import Footer from "../Footer";
 
 
 export const Login=()=>{
@@ -101,7 +103,7 @@ export const Login=()=>{
 
 
   //
-    const paperStyle={padding :20,height:'80vh',width:300, margin:"20px auto"}
+    const paperStyle={padding :20,height:'50vh',width:300, margin:"20px auto"}
     const avatarStyle={backgroundColor:'#1bbd7e'}
     const btnstyle={margin:'8px 0'}
     return(
@@ -130,6 +132,8 @@ export const Login=()=>{
                 </Typography>
             </Paper>
         </Grid>
+        <NewsLetter/>
+    <Footer/>
         </>
     )
 }

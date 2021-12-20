@@ -116,6 +116,8 @@ import {
 } from "@material-ui/core";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { NavBar } from '../NavBar';
+import Footer from '../Footer';
+import NewsLetter from '../NewsLetter';
 
 
 export const Register = () => {
@@ -141,7 +143,7 @@ export const Register = () => {
   };
 
   const paperStyle = {
-    height: "80vh",
+    height: "60vh",
     width: 300,
     padding: 20,
     margin: "20px auto",
@@ -207,6 +209,8 @@ export const Register = () => {
 
       </Paper>
     </Grid>
+    <NewsLetter/>
+    <Footer/>
     </>
 
   );

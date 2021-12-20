@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ProductsService from "../../services/ProductsService";
+import Footer from "../Footer";
 import { NavBar } from "../NavBar";
+import NewsLetter from "../NewsLetter";
 import "./style.css";
 
 const Product = () => {
@@ -31,15 +33,17 @@ const Product = () => {
                 <img src={product_img} alt="img" ></img>
                 <figcaption>
                   <h4>Brand : {brand}</h4>
-                  <h5>Item : {name}</h5>
-                  <p>Price : {price}</p>
-                  <p>Quantity : {quantity}</p>
+                  <h4>Item : {name}</h4>
+                  <h4>Price : {price}</h4>
+                  <h4>Quantity : {quantity}</h4>
                 </figcaption>
               </figure>
             );
           })}
         </div>
       </div>
+      <NewsLetter/>
+    <Footer/>
     </>
   );
 };
