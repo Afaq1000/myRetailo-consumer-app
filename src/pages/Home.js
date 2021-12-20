@@ -15,7 +15,7 @@ export const Home = () => {
         </div>
         <Slider/>
         {/* <Categories/> */}
-        <Products/>
+        {/* <Products/> */}
         <NewsLetter/>
         <Footer/>
         </>
